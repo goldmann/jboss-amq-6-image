@@ -1,0 +1,5 @@
+name: xpaas.amq.install
+schema_version: 1
+execute:
+  - execute: install.sh
+  - execute: chown.sh
