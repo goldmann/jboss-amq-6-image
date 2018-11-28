@@ -1,5 +1,0 @@
-
-function openjdk_jvm_options() {
-    echo "-XX:+UnlockExperimentalVMOptions "\
-         "-XX:+UseCGroupMemoryLimitForHeap "
-}

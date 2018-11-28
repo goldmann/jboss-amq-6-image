@@ -25,6 +25,10 @@ envs:
 modules:
       repositories:
           - path: modules
+          - name: cct_module
+            git:
+              url: https://github.com/jboss-openshift/cct_module.git
+              ref: master
       install:
           - name: jboss.container.openjdk.jdk
             version: "8"
