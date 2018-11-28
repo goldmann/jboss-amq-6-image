@@ -3,7 +3,7 @@ schema_version: 1
 name: "jboss-amq-6/amq63"
 description: "Red Hat JBoss AMQ 6.3 container image"
 version: "6.3.0"
-from: "jboss/openjdk18-rhel7:1.1-29"
+from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
       value: "jboss-amq-6-amq63-container"
@@ -26,6 +26,8 @@ modules:
       repositories:
           - path: modules
       install:
+          - name: jboss.container.openjdk.jdk
+            version: "8"
           - name: amq-install
           - name: amq-chown
 artifacts:
